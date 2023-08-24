@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Feel-Alive Chicken Burgers">
+    <meta name="description" content="This is a food html template created by RomanEmpiree">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-----google fonts------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+    <!-----custom css link------>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!---------preload images-->
+    <link rel="preload" as="image" href="./assets/images/hero-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+    <title>Roman-Burgers</title>
+
+    <!-------carousel css begins------------->
+    <style>
+    
+    * {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+     </style>
+    <!--------carousel css ends-->
+</head>
+<body id="top">
+    <!--------header----------->
+
+    <header class="header" data-header>
+        <div class="container">
+            <a href="##" class="logo" style="display: flex;">
+                <img src="./assets/images/icon-2.png" width="60" height="20" alt="Crispy home"><span style="font-family:cursive; margin-left: 20px; margin-top: 20px;">Roman Burger</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="" class="nav-logo">
+                    <img src="./assets/images/logo.svg" width="175" height="61" alt="Crispy home">
+                </a>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#popular" class="navbar-link" data-nav-link>Menu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-link" data-nav-link>Best sellers</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#schedule" class="navbar-link" data-nav-link>Working hours</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#location" class="navbar-link" data-nav-link>Location</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="##" class="navbar-link" data-nav-link>Gift card</a>
+                    </li>
+                </ul>
+                <a href="#reservation" class="btn">
+                    <span class="span">Book a Table</span>
+                </a>
+                
+                <a href="#reservation" class="btns">
+                    <span class="span"><ion-icon name="person-outline"></ion-icon></span>
+                </a>
+            </nav>
+
+            <div class="header-action">
+                <a href="tel:000(123)45689" class="call">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">000 (123) 456 89</span>
+                </a>
+                <a href="" class="btn">
+                    <span class="span">Book A Table</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+            </div>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler="">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <div class="overlay" data-overlay data-nav-toggler=""></div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-----hero------>
+
+            <section class="hero" aria-label="home" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="h1 title hero-title">ROMAN BURGER</div>
+                        <p class="section-text">
+                            Welcome! You can earn points with every purchase and use them to redeem rewards.
+                        </p>
+
+                        <div class="wrapper">
+                            <img src="./assets/images/down-arrow.png" width="40" height="40" class="arrow" alt="arrow">
+                            <a href="##" class="btn">
+                                <span class="span">Order Now</span>
+                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <figure class="hero-banner img-holder" style="--width:632 ; --height:606 ;">
+                        <!---------carousel------------------>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              
+                              <img src="./assets/images/pexels-jonathan-borba-2983103.jpg" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                             
+                              <img src="./assets/images/pexels-israel-albornoz-12034622.jpg" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              
+                              <img src="./assets/images/pexels-valeria-boltneva-1199957.jpg" style="width:100%">
+                              
+                            </div>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+                     </figure>
+                    
+                        <!----------carousel ends ---------------->
+                        <img src="./assets/images/hero-shape-1.png" width="490" height="455" alt="shape" class="shape shape-1">
+
+                        <img src="./assets/images/hero-shape-2.png" width="512" height="512" alt="shape" class="shape shape-2">
+
+                        <img src="./assets/images/line-1.png" width="630" height="506" alt="shape" class="shape shape-3">
+                </div>
+            </section>
+
+    
+            <!---------------popular------------>
+            <section class="section popular" aria-labelledby="popular-label" id="popular">
+                <div class="container">
+                    <p class="section-subtitle text-center" id="popular-label">Our Menu</p>
+
+                    <h2 class="h2 title section-title text-center">
+                        Best Category Food Menu
+                    </h2>
+                    <ul class="grid-list">
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-1.png" width="85" height="85" loading="lazy" alt="Pizza">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Pizza</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-2.png" width="85" height="85" loading="lazy" alt="Burger">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Burger</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-3.png" width="85" height="85" loading="lazy" alt="Bread">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Bread</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-4.png" width="85" height="85" loading="lazy" alt="SeaFoods">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">SeaFoods</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-5.png" width="85" height="85" loading="lazy" alt="Coffee">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Coffee</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/icon-6.png" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Chicken</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/10632610_4505801.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Rice</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/9134249_4084172.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Milkshake</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/9956920_48049.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Salad</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/22631342_6606248.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Kebab</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/16460830_cqck_xlhy_210608.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Steak</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-icon">
+                                    <img src="./assets/images/22631401_6607776.jpg" width="85" height="85" loading="lazy" alt="Chicken">
+                                </figure>
+                                <h3 class="h3 title">
+                                    <a href="##" class="card-title">Soup</a>
+                                </h3>
+
+                                <a href="##" class="card-btn" aria-label="view all product">
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!----------Menu section-------->
+            <section class="section menu" aria-labelledby="menu-label" id="menu">
+                <div class="container">
+                    <p class="section-subtitle text-center" id="menu-label">Our Best Sellers</p>
+
+                    <h2 class="title h2 section-title text-center"></h2>
+
+                    <div class="section-wrapper">
+                        <figure class="menu-banner img-holder" style="--width: , --height: ;">
+                        <img src="./assets/images/menu-banner.jpg" width="540" height="790" loading="lazy" class="img-cover" alt="menu-burger"></figure>
+
+                        <ul class="grid-list">
+                            <li class="menu-item">
+                                <figure class="item-banner">
+                                    <img src="./assets/images/menu-1.png" width="150" height="150" loading="lazy" alt="Hamburger">
+                                </figure>
+
+                                <div class="item-content">
+                                    <div class="title h3 title-wrapper">
+                                        <h3>
+                                            <a href="##" class="item-title">Burger</a>
+                                        </h3>
+
+                                        <span class="separator"></span>
+                                        <span class="price">€25</span>
+                                    </div>
+
+                                    <p class="menu-text">Hamburger, wild salmon burger, cheeseburger, veggie-burger</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+
+                                        <p class="rating-text">(5k Reviews)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <figure class="item-banner">
+                                    <img src="./assets/images/appetizing-healthy-rice-with-vegetables-white-plate-wooden-table.jpg" width="150" height="150" loading="lazy" alt="Pizza">
+                                </figure>
+
+                                <div class="item-content">
+                                    <div class="title h3 title-wrapper">
+                                        <h3>
+                                            <a href="##" class="item-title">Rice</a>
+                                        </h3>
+
+                                        <span class="separator"></span>
+                                        <span class="price">€15 - €25</span>
+                                    </div>
+
+                                    <p class="menu-text">Veggie rice, Chicken biryani, Jambalaya, Jollof rice, Arroz Chaufa</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+
+                                        <p class="rating-text">(5k Reviews)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <figure class="item-banner">
+                                    <img src="./assets/images/close-up-chicken-near-french-fries-salad.jpg" width="150" height="150" loading="lazy" alt="Baked chicken wings">
+                                </figure>
+
+                                <div class="item-content">
+                                    <div class="title h3 title-wrapper">
+                                        <h3>
+                                            <a href="##" class="item-title">Chicken with French Fries and Salad</a>
+                                        </h3>
+
+                                        <span class="separator"></span>
+                                        <span class="price">€25</span>
+                                    </div>
+
+                                    <p class="menu-text">With one free sauce from ( Garlic, Ketchup, Chilli)</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+
+                                        <p class="rating-text">(5k Reviews)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <figure class="item-banner">
+                                    <img src="./assets/images/menu-4.png" width="150" height="150" loading="lazy" alt="Seafood Pizza">
+                                </figure>
+
+                                <div class="item-content">
+                                    <div class="title h3 title-wrapper">
+                                        <h3>
+                                            <a href="##" class="item-title">Seafood Pizza</a>
+                                        </h3>
+
+                                        <span class="separator"></span>
+                                        <span class="price">€20</span>
+                                    </div>
+
+                                    <p class="menu-text">Festive seafood pizza, shrimp scampi pizza, lobster pizza, smoked salmon and avocado pizza</p>
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+
+                                        <p class="rating-text">(5k Reviews)</p>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <a href="##" class="btn">
+                                            <span class="span">View More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!----------schedule section--------->
+
+            <section class="section schedule" aria-labelledby="schedule-label" id="schedule">
+                <div class="container">
+                    <div class="schedule-content">
+                        <p class="section-subtitle" id="schedule-label">Working Hour</p>
+                        <h2 class="h2 title section-title">
+                            Enjoy Our Meal 6 Days In a Week
+                        </h2>
+
+                        <ul class="schedule-list">
+                            <li class="schedule-item">
+                                <p class="h4-title">Monday - Friday</p>
+                                <div class="separator"></div>
+                                <div class="time title">9am - 7pm</div>
+                            </li>
+                            <li class="schedule-item">
+                                <p class="h4-title">Saturday</p>
+                                <div class="separator"></div>
+                                <div class="time title">8am - 9pm</div>
+                            </li>
+                            <li class="schedule-item">
+                                <p class="h4-title">Sunday</p>
+                                <div class="separator"></div>
+                                <div class="time title">Closed</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="schedule-banneranner">
+                        <figure class="img-holder">
+                            <img src="./assets/images/schedule-banner.jpg" width="960" height="640" loading="lazy"  alt="schedule banner" class="img-cover">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------Our location------->
+            <section class="location" id="location">
+                <div class="container">
+                <h1>Our Restuarant Locations</h1>
+                <p>We have our main Restuarant in Berlin, Germany</p>
+                
+                <div class="row">
+                <div class="campus-col">
+                    <img src="./assets/images/pexels-quark-studio-3201921.jpg">
+                    <div class="layer"><h3> MITTE - BERLIN</h3></div></div>
+                <div class="campus-col">
+                    <img src="./assets/images/pexels-eva-bronzini-6141651.jpg">
+                    <div class="layer"><h3>SPANDAU - BERLIN</h3></div></div>
+                <div class="campus-col">
+                    <img src="./assets/images/pexels-kaboompics-com-6267.jpg">
+                    <div class="layer"><h3>KREUZBERG - BERLIN</h3></div></div>
+                 </div>
+                <div class="row">
+                <div class="campus-col">
+                    <img src="./assets/images/pexels-vedanti-239975.jpg">
+                    <div class="layer"><h3>LICHTENBERG - BERLIN</h3></div></div>
+                 <div class="campus-col">
+                    <img src="./assets/images/pexels-igor-starkov-1055058.jpg">
+                    <div class="layer"><h3>DAHLEM - BERLIN</h3></div></div>
+                 <div class="campus-col">
+                    <img src="./assets/images/pexels-igor-starkov-1307698.jpg">
+                    <div class="layer"><h3>TIERGARTEN - BERLIN</h3></div></div></div>
+                 </div>
+            </section>
+
+            <!----------Reservation section----------->
+
+            <section class="section reservation" aria-labelledby="reservation-label" id="reservation">
+                <div class="container">
+                    
+                        <figure class="reservation-banner img-holder" style="--width:630 ; --height: 730;">
+                        <img src="./assets/images/reservation-banner.jpg" width="630" height="730" loading="lazy" class="img-cover" alt="Reservation banner"></figure>
+                    
+                        <div class="reservation-content">
+                            <p class="section-subtitle" id="reservation-label">Book A Table</p>
+                            <h2 class="h2 title section-title">Make A Reservation</h2>
+                            <p class="section-text">Sit amet consectetur adipiscing elitsue risus mauris adipiscing phasellus aene ante orcirat</p>
+
+                            <form action="./index.html" method="get" class="booking-form">
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" placeholder="Your name" autocomplete="off" class="input-field">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <input type="text" name="date" placeholder="Date" autocomplete="off" class="input-field" id="date">
+                                    <ion-icon name="Calendar-outline"></ion-icon>
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <input type="text" name="time" placeholder="Reservation Time" autocomplete="off" class="input-field">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                </div>
+
+                                <button type="submit" class="btn">
+                                    <span class="span">Book A Table</span>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+
+                        <img src="./assets/images/line-1.png" width="630" height="506" loading="lazy" alt="shape" class="shape">
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-----------footer------------->
+
+    <footer class="footer">
+        <div class="section footer-top">
+            <div class="container">
+               <div class="footer-brand">
+                <a href="" class="logo" style="display: flex;">
+                    <img src="./assets/images/icon-2.png" width="100" height="50" alt="Crispy home"><span style="font-family:cursive; margin-left: 20px; margin-top: 38px; font-size: 2.5rem;">Roman Burger</span>
+                </a>
+                <p class="footer-text">Sit amet consectetur adipiscing elitsue risus mauris adipis</p> 
+               </div>
+
+               <ul class="footer-list">
+                <li>
+                    <p class="title footer-list-title">Quick Links</p>
+                </li>
+                <li>
+                    <a href="" class="footer-link">About Company</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Download app</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Our Blog</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Gift cards</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Contact Us</a>
+                </li>
+                
+               </ul>         
+
+               <ul class="footer-list">
+                <li>
+                    <p class="title footer-list-title">Get to Know Us</p>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Communities</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Sustainability</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Careers</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Nutrition</a>
+                </li>
+                <li>
+                    <a href="" class="footer-link">Donate</a>
+                </li>
+               </ul>
+
+               <ul class="footer-list">
+                <li>
+
+                    <p class="list-subtitle">&#9742;&#65039; Call for Order:</p>
+                    <a href="tel:+1 2586 5892" class="title call">+1 2586 5892</a>
+                    <a href="hello@crispy.com" class="email contact-text">&#128231; &nbsp; RomanB@burgers.com</a>
+                </li>
+                <li>
+                    <p class="list-subtitle">&#128205; &nbsp;Location: </p>
+                    <address class="contact-text">
+                        ABC carnnishko str, 10998 Berlin 
+                    </address>
+                </li>
+               </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright text-center">
+                    &copy; 2023 RomanEmpiree, All Rights Reserved
+                </p>
+
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="" class="footer-bottom-link">Setting & Privacy</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-bottom-link">Faqs</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-bottom-link">Unsubscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--------back to top------>
+
+    <a href="#top" class="back-to-top-btn" aria-label="back to top" data-back-to-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------- carousel script start----------->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <!----------Carousel Script end--------->
+   
+    <!--------------custom Js link------------>
+    <script src="script.js"></script>
+    <!------------ionicon links--------------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!----------------scroll------------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+</html>

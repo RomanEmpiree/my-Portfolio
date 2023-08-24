@@ -1,0 +1,33 @@
+
+
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
+
+const sr = ScrollReveal ({
+    distance: '60px',
+    duration:2500,
+    delay:400,
+    reset:true
+});
+
+
+sr.reveal('.text', {delay:100, origin: 'top'});
+sr.reveal('.form-container form', {delay:100, origin: 'bottom'});
+sr.reveal('.heading', {delay:100, origin: 'top'});
+sr.reveal('.services-container .box', {delay:100, origin: 'top'});
+sr.reveal('.about-container .box', {delay:100, origin: 'left'});
+sr.reveal('.review-container', {delay:100, origin: 'top'});
+sr.reveal('.news .box', {delay:100, origin: 'bottom'});
+
+

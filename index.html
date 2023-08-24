@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/310a306baf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header section begins-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="home">Home</a></li>
+                    <li><a href="#about" class="about">About</a></li>
+                    <li><a href="#portfolio" class="portfolio">Projects</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello and Welcome!</h3>
+                <h1>My name is <span>Andrew</span></h1>
+                <h2>I'm a <span class="multi">Frontend Developer</span></h2>
+            </div>
+        </div>
+    </div>
+    <!--header section closes-->
+
+    <!--about section begins-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/andrew-photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title can">About <span>Me</span></h1>
+                    <p>My name is Andrew Onoruese. I have a strong foundation in frontend web development and I am still learning backend technology, but my initial area of experience is project management, which have aided in the development of my leadership and strategic thinking skills. In 2022, I decided to switch career paths because of my passion for web development and I love beautiful websites. <br> <br>My main focus these days is building websites that are of the highest caliber, effective, and aesthetically pleasing. I'm always looking for new challenges and opportunities to develop my skill sets and take part in interesting initiatives.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end</span><br>HTML5, CSS3, JavaScript(ES6+), React.js, Command Line, Responsive web design, Testing and Debugging, Version Control.</li>
+                            <li><span>Back-end</span><br>Node.js, Database management(MySQL, MongoDB), RESTful API design. </li>
+                            <li><span>Tools</span><br>Visual Studio Code, Atom, Bracket, Unix Command Line Interface.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Nov 2022 - Present</span><br>Sales Assistant at Zara Deutschland</li>
+                            <li><span>Jan 2020 - Nov 2021</span><br> Assistant Manager at Novo water factory, Nigeria</li>
+                            <li><span>Jan 2021 - Present</span><br>Freelance Web Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-2023</span><br>M.A Engineering Management (IUBH Berlin, Germany)</li>
+                            <li><span>2022-present</span><br>The complete web development bootcamp 2023 (online version) (Tutor/Instructor- Senior developer Angela Yu)</li>
+                            <li><span>2013-2018</span><br>Chemical Engineering (IUO Edo, Nigeria)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul class="hobbs">
+                            <li>Playing Video Games</li>
+                            <li>Trying out new restuarants with friends</li>
+                            <li>Surfing the net and reading up about the latest technologies in the market</li>
+                            <li>Cooking (trying out different recipies online)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about section closes here-->
+
+    <!--portfolio/my work section begins-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title werk">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pexels-christina-morillo-1181243.jpg">
+                    <div class="layer">
+                        <h3>Websites</h3>
+                        <p>Here are a few projects I have made using HTML, CSS, and JavaScript</p>
+                        <a href="websites.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pexels-garrett-morrow-682933.jpg">
+                    <div class="layer">
+                        <h3>Games</h3>
+                        <p>Here are a few games I have made using HTML, CSS, and JavaScript </p>
+                        <a href="games.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--porfolio/my work section ends-->
+
+    <!-- contact section begins-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Onorueserukky4@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+4917684855255</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/andre_rukky/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Andre.onoruese"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/andrew-onoruese-6b0a1017a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RomanEmpiree"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                 <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                 </div>
+                 <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;margin-top: 50px; font-size: 0.8rem;">This portfolio was created using HTML, CSS, and basic JavaScript. Coded in Visual Studio Code by yours truly. <br> RomanEmpiree</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+  <script>
+    const typed = new Typed('.multi', {
+      strings: ['UI/UX Designer',],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop:true
+    });
+  </script>
+    <script src="script.js"></script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlTSNwj4hgpBW68aJqr8YcKhaDjldFJq-MhHGV9JFxE2GTMZUzBzdKiYEKvk8PorATVg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =  document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message has been successfully sent. Thank you!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+                })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+
+</body>
+</html>
