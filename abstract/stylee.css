@@ -817,6 +817,9 @@
         margin-right:50px;
         margin-top:-45px;
     }
+    .container-fluid{
+        width: 100%;
+    }
     .container-fluid .btn-sm{
         width: 20%;
         font-size: 0.9rem;
@@ -929,6 +932,10 @@
         margin-left: -30px;
     }
     /*-------------------------------services-----------------*/
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
     .headers{
         width: 100%;
         min-height: 40vh;
