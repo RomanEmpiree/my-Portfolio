@@ -197,7 +197,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background:  #0e1350;
+    background:  #ff004f;
     position: absolute;
     left: 0;
     bottom:-8px;
@@ -263,6 +263,13 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+}
+.web h3{
+    font-size: 1rem;
+    padding-top: 30px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: -20px; 
 }
 
 /*------------------------------portfolio begins----------------------------------*/
@@ -455,7 +462,7 @@ nav .fas{
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -501,6 +508,7 @@ nav .fas{
         width: 100%;
         height: 100%;
         padding: 20px 0;
+        margin-left: 50px;
     }
     /**-------- contact---------*/
     #contact{
@@ -521,8 +529,15 @@ nav .fas{
     .work img:hover{
         transition: transform 0.5s;
     }
-    .btn.btn2{
+    .btn .btn2{
         font-size: 10px;
+    }
+    .web h3{
+        font-size: 1rem;
+        padding-top: 30px;
+        cursor: pointer;
+        margin-left: 80px;
+        margin-top: -20px; 
     }
    
 }

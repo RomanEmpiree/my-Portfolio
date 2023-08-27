@@ -147,7 +147,7 @@ input[type="text"]::placeholder{
     left: 3%;
     position: relative;
 }
-/*-----courses------------------------------------------*/
+/*-----University news------------------------------------------*/
 .course{
     width:90%;
     margin: auto;
@@ -254,18 +254,27 @@ p{
 
 
 
-/*---------------news------------------------*/
+/*---------------news about uni------------------------*/
 .news{
     width:90%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
+.news h2{
+    font-weight: 200;
+}
+/*-------------------facility-------------*/
 * {
     box-sizing: border-box;
   }
   
-  
+  .new{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
   .containers {
     width: 50%;
     height: 100vh;
@@ -359,6 +368,42 @@ p{
   .demo:hover {
     opacity: 1;
   }
+  .fac{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.fac-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    
+}
+.fac-col img{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+.fac-col p{
+    padding: 0;
+}
+.fac-col h4{
+    margin-top: 15px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+/*--------------------connect------------------------*/
+.con h2{
+    font-weight: 200;
+    font-size: 3rem;
+}
+.con h3{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
 /*------------------------- campus-----------------------------*/
 .campus{
     width: 80%;
@@ -426,34 +471,7 @@ p{
     display: table;
     clear: both;
   }
-/*---- facility----*/
-.fac{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.fac-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    
-}
-.fac-col img{
-    width: 100%;
-    height: 65%;
-    border-radius: 10px;
-}
 
-.fac-col p{
-    padding: 0;
-}
-.fac-col h4{
-    margin-top: 15px;
-    margin-bottom: 14px;
-    text-align: left;
-}
 /*----------------------testimonials-----------------------*/
 .test{
     width: 80%;
@@ -832,7 +850,7 @@ p{
         margin-left: 0px;
         width: 90%;
         border-radius: 15px 15px;
-        background-color: #8e9094;
+        background-color: #cacccf;
     }
     .container-rank .row{
         display: grid;
@@ -900,18 +918,20 @@ p{
     }
     .new h2{
         text-align: center;
+        margin-left: 0px;
     }
     .new p{
         text-align: center;
+        margin-left: 0px;
     }
     .containers a{
-        margin-top: -75px;
+        margin-top: -79px;
         font-size: 0.4rem;
         color: white;
     }
     .containers{
         width: 100%;
-        margin-left:20px;
+        margin-left:0px;
     }
     /*--------------connect---------------------------*/
     .con{
