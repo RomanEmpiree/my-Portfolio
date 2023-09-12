@@ -43,6 +43,10 @@ header{
     background: #eeeff1;
     padding:15px 100px;
 }
+header .logo h2{
+    float: right;
+    padding-left: 20px;
+}
 .logo img{
     width: 35px;
 }
